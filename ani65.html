@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css?family=Orbitron:900');
+
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+      @-webkit-keyframes tracking-in-expand-fwd-top {
+      	0% {
+      		letter-spacing: -.5em;
+      		-webkit-transform: translateZ(-700px) translateY(-500px);
+      		transform: translateZ(-700px) translateY(-500px);
+      		opacity: 0
+      	}
+      	40% {
+      		opacity: .6
+      	}
+      	100% {
+      		-webkit-transform: translateZ(0) translateY(0);
+      		transform: translateZ(0) translateY(0);
+      		opacity: 1
+      	}
+      }
+
+      @keyframes tracking-in-expand-fwd-top {
+      	0% {
+      		letter-spacing: -.5em;
+      		-webkit-transform: translateZ(-700px) translateY(-500px);
+      		transform: translateZ(-700px) translateY(-500px);
+      		opacity: 0
+      	}
+      	40% {
+      		opacity: .6
+      	}
+      	100% {
+      		-webkit-transform: translateZ(0) translateY(0);
+      		transform: translateZ(0) translateY(0);
+      		opacity: 1
+      	}
+      }
+
+      @-webkit-keyframes scale-up-center {
+      	0% {
+      		-webkit-transform: scale(1);
+      		transform: scale(1)
+      	}
+      	100% {
+      		-webkit-transform: scale(1.2);
+      		transform: scale(1.2)
+      	}
+      }
+
+      @keyframes scale-up-center {
+      	0% {
+      		-webkit-transform: scale(1);
+      		transform: scale(1)
+      	}
+      	100% {
+      		-webkit-transform: scale(1.1);
+      		transform: scale(1.1)
+      	}
+      }
+
+      body {
+      	background-color: black;
+      	height: 900px;
+      	background-image: url('http://res.cloudinary.com/dacxbqrp3/image/upload/v1521574389/fdbfpsmerge2_amxamv.jpg');
+      	background-size:cover;
+      }
+      .card1:active{
+
+
+      }
+
+      .card1 {
+      	background-color: white;
+        width: 300px;
+      	height: 460px;
+      	margin: auto;
+      	position: absolute;
+      	top: 200px;
+        right:1500px;
+      	padding: 10px;
+      	-webkit-animation: vibrate-1 0.3s linear infinite both;
+      	-moz-animation: vibrate-1 0.3s linear infinite both;
+      	animation: vibrate-1 0.3s linear infinite both;
+      	margin-top:50px;
+      }
+      .card2 {
+      	background-color: white;
+        width: 300px;
+      	height: 460px;
+      	margin: auto;
+      	position: absolute;
+      	top: 200px;
+        right:1150px;
+      	padding: 10px;
+      	-webkit-animation: vibrate-1 0.3s linear infinite both;
+      	-moz-animation: vibrate-1 0.3s linear infinite both;
+      	animation: vibrate-1 0.3s linear infinite both;
+      	margin-top:50px;
+      }
+
+      .card3 {
+        background-color: white;
+        width: 300px;
+        height: 460px;
+        margin: auto;
+        position: absolute;
+        top: 200px;
+        right:800px;
+        padding: 10px;
+        -webkit-animation: vibrate-1 0.3s linear infinite both;
+        -moz-animation: vibrate-1 0.3s linear infinite both;
+        animation: vibrate-1 0.3s linear infinite both;
+        margin-top:50px;
+      }
+
+      .card4 {
+        background-color: white;
+        width: 300px;
+        height: 460px;
+        margin: auto;
+        position: absolute;
+        top: 200px;
+        right:450px;
+        padding: 10px;
+        -webkit-animation: vibrate-1 0.3s linear infinite both;
+        -moz-animation: vibrate-1 0.3s linear infinite both;
+        animation: vibrate-1 0.3s linear infinite both;
+        margin-top:50px;
+      }
+      .card5 {
+      	background-color: white;
+        width: 300px;
+      	height: 460px;
+      	margin: auto;
+      	position: absolute;
+      	top: 200px;
+        right:100px;
+      	padding: 10px;
+      	-webkit-animation: vibrate-1 0.3s linear infinite both;
+      	-moz-animation: vibrate-1 0.3s linear infinite both;
+      	animation: vibrate-1 0.3s linear infinite both;
+      	margin-top:50px;
+      }
+
+
+
+      .card1:hover {
+      	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	-moz-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
+      .card2:hover {
+      	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	-moz-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
+      .card3:hover {
+      	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	-moz-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
+      .card4:hover {
+      	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	-moz-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
+      .card5:hover {
+      	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	-moz-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
+
+      span {
+      	position:absolute;
+      	width:100%;
+      	height:100%;
+      	top:0;
+      	left:0;
+
+      	z-index:5;
+      	background-image: url('empty.gif');
+      }
+      #image {
+      	height: 300px;
+      	background-color: gray;
+      	width: 100%;
+      }
+
+      #description {
+      	background-color: #e5e5e5;
+      	z-index: 3;
+      	width: 100%;
+      	height: 115px;
+      }
+
+      #description p {
+      	color:black;
+      }
+
+      p {
+      	padding: 10px;
+      	padding-top: 15px;
+      	font-family: 'Orbitron', sans-serif;
+      	font-size: 14px;
+      }
+
+      .foxpic {
+      	background-image: url('http://mblogthumb2.phinf.naver.net/MjAxNzEyMjJfMTcz/MDAxNTEzOTMwMDUxMDM4._zg0wKhNxeElC2p66sz0P_1xTH9ejhjo5iDNzWzwJUog.csbmJ1mJXYxmSvKTi6rrAZ-ECklNQ6Cl4mgdmNpSCCwg.PNG.anuim1/%EB%8D%B0%EB%AA%AC%EC%96%B4%EB%B2%A4%EC%A0%B8.PNG?type=w800');
+      	background-size: cover;
+      }
+
+      .foxtxt {
+      	position:relative;
+      	bottom:7px;
+      }
+
+      .falcopic {
+      	background-image: url('http://blogfiles.naver.net/MjAxOTAxMTBfMjM0/MDAxNTQ3MDg3MDQ2ODMx.dHBTyDrVscwKJIIw4My4WPvOG4P-fUABBQ0Cwwro4tQg.E5eAS7Y8IpBOIEnfNTw_jbPkAKje7SVBgL6MoA4uX44g.JPEG.1212rk/download.jpeg-1.jpg');
+      	background-size: cover;
+      }
+
+      .marthpic {
+      	background-image: url('http://blogfiles.naver.net/20120731_80/juble93_1343703747810mQQ0G_PNG/1.png');
+      	background-size: cover;
+      }
+
+      .puffpic {
+      	background-image: url('http://blogfiles.naver.net/MjAxOTEwMDNfMTM2/MDAxNTcwMDgzNjY0MzQz.bbTTXmOt_tqMRY8KQ7NA-z-G-UB9MOt6k-bc_wm9haUg.r59PVhLDP9hK2gs9NgmjV_xEuO1MCt6vt7ygqhdOpnEg.PNG.alvarixfnm/3.png');
+      	background-size: cover;
+      }
+
+      .sheikpic {
+      	background-image:url('http://blogfiles.naver.net/MjAxOTEyMTJfMjAw/MDAxNTc2MDkzNzQ2ODMz.3ZbByKB1_A9W4daZLHZzLLuAtkD_Q7SrFPH3K1bH-b4g.vO-p5rGL0xftJfqTbhRvjUd82B7HPogkOC9v1cjqBukg.PNG.sunusun191x/2.png');
+      	background-size:cover;
+      }
+
+      .peachpic {
+      	background-image:url('http://res.cloudinary.com/dacxbqrp3/image/upload/v1521574388/peachimgcropped_wwc3id.jpg');
+      	background-size:cover;
+      }
+
+      .peachtxt {
+      	bottom:7px;
+      	position:relative;
+      }
+
+      .pufftxt {
+      	position:relative;
+      	bottom:7px;
+      }
+
+      .samuspic {
+      	background-image:url('http://res.cloudinary.com/dacxbqrp3/image/upload/v1521574726/samusimg_hmyyf8.jpg');
+      	background-size:cover;
+      }
+
+      .falconpic {
+      	background-image:url('http://res.cloudinary.com/dacxbqrp3/image/upload/v1521574727/cfalconimg2_x8xitu.png');
+      	background-size:cover;
+      }
+
+      .icpic {
+      	background-image:url('http://res.cloudinary.com/dacxbqrp3/image/upload/v1521574388/icimgcropped_a0sbjw.jpg');
+      	background-size:cover;
+      }
+
+      h2 {
+      	font-family: 'Orbitron', sans-serif;
+      	color: white;
+      	position: relative;
+      	bottom: 50px;
+      	font-size: 40px;
+      	text-shadow: 0px 0px 8px rgba(139, 0, 0, 1);
+      }
+
+      .myButton:hover {
+
+      }
+      .card1:after {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(255,255,255,0.4);
+          -webkit-transition: none;
+          -moz-transition: none;
+          -ms-transition: none;
+          -o-transition: none;
+          transition: none;
+
+      }
+      .card1:hover:after {
+          width: 120%;
+          background-color: rgba(255,255,255,0);
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -ms-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+      }
+      .card2:after {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(255,255,255,0.4);
+          -webkit-transition: none;
+          -moz-transition: none;
+          -ms-transition: none;
+          -o-transition: none;
+          transition: none;
+
+      }
+      .card2:hover:after {
+          width: 120%;
+          background-color: rgba(255,255,255,0);
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -ms-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+      }
+
+      .card3:after {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(255,255,255,0.4);
+          -webkit-transition: none;
+          -moz-transition: none;
+          -ms-transition: none;
+          -o-transition: none;
+          transition: none;
+
+      }
+      .card3:hover:after {
+          width: 120%;
+          background-color: rgba(255,255,255,0);
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -ms-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+      }
+
+      .card4:after {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(255,255,255,0.4);
+          -webkit-transition: none;
+          -moz-transition: none;
+          -ms-transition: none;
+          -o-transition: none;
+          transition: none;
+
+      }
+      .card4:hover:after {
+          width: 120%;
+          background-color: rgba(255,255,255,0);
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -ms-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+      }
+
+      .card5:after {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(255,255,255,0.4);
+          -webkit-transition: none;
+          -moz-transition: none;
+          -ms-transition: none;
+          -o-transition: none;
+          transition: none;
+
+      }
+      .card5:hover:after {
+          width: 120%;
+          background-color: rgba(255,255,255,0);
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -ms-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+      }
+
+      .txt {
+      	width:100%;
+      }
+
+      h3 {
+      	font-family: 'Orbitron', sans-serif;
+      	color:white;
+      	position: relative;
+      }
+
+      .discp {
+      	color:white;
+      	font-size:16px;
+      	font-family: 'Open Sans', sans-serif;
+      }
+
+    </style>
+  </head>
+  <body>
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <!-- <div id="credit">
+    	<p>Art by <a href="https://twitter.com/moxie2D">Moxie2D</a></br>
+    Ice Climber art by <a href="http://www.zerochan.net/Russel+%28Artist%29">Russel</a></br>
+    Falcon art by <a href="http://jisuart.deviantart.com/">JisuArt</a></p>
+    </div> -->
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <div id="disclaimer">
+    	<h3 class="text-center">메이플 스토리 무자본 직업 추천:</h3>
+    	<p class="text-center discp">These writeups should be taken with a grain of salt. This is a deep and flexible game with many different </br> playstyles; it is up to you, the player, to experiment with different characters to find what's best for you. </br> The purpose of this site is to introduce a general idea of each character. There are a lot more</br>tech and strats for you to learn.</p>
+    </div>
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <div class="container">
+    	<div class="row">
+        <div id="joker">
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 card1" id="foxbox">
+    			<!--Using <a> and <span>, we can make the div act as a hyperlink-->
+    			<a href="https://ksh030523.github.io/homepage/damon.html"><span></span></a>
+
+    			<div id="image" class="foxpic">
+    				<h2 class="text-center">Damon</h2>
+    			</div>
+
+    			<div id="description">
+    				<p class="text-center txt foxtxt">모든 공격은 HP 기반으로 공격력을 결정하며</br> 스킬을 사용할 때마다 HP를 사용하는 것이</br> 특징입니다. 모든 스킬이 HP를 소모하지만</br> 그만큼 HP를 회복할 수 있는 흡혈 스킬이<br> 많아 운용 난이도가 쉬운 편에 속합니다.</p>
+    			</div>
+        </div>
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 card2" id="falcobox">
+    			<a href="https://ksh030523.github.io/homepage/path.html"><span></span></a>
+    			<div id="image" class="falcopic">
+    				<h2 class="text-center">PathFinder</h2>
+    			</div>
+
+    			<div id="description">
+    				<p class="text-center txt">전용 무기인 에인션트 보우를 활용해</br> 고유한 특성을 지닌 세 개의 기본 궁술을</br> 연계하여 전투하며, 이를 통해 렐릭 게이지를</br> 충전하고 강력한 스킬을 사용할 수 있습니다.
+    				</p>
+    			</div>
+    		</div>
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 card3" id="puffbox">
+    			<a href="https://ksh030523.github.io/homepage/angelic.html"><span></span></a>
+    			<div id="image" class="marthpic">
+    				<h2 class="text-center">Angelic</h2>
+    			</div>
+
+    			<div id="description">
+    				<p class="text-center txt">
+    					MP를 사용하지 않고 리차지라는 시스템으로 </br>공격스킬을 사용합니다.</br>한계 데미지가 매우 높기 때문에 </br>높은 잠재력을 가지고 있습니다.
+    				</p>
+    			</div>
+    		</div>
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    	</div>
+    	<div class="row">
+    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 card4" id="puffbox">
+    			<a href="https://ksh030523.github.io/homepage/aran.html"><span></span></a>
+    			<div id="image" class="puffpic">
+    				<h2 class="text-center">Aran</h2>
+    			</div>
+    			<div id="description">
+    				<p class="text-center txt pufftxt">
+    					콤보시스템을 통해 다이내믹한 플레이를 즐길 수 있습니다.</br>콤보가 모이면 순간 능력치가 강화되는</br> 아드레날린 부스트 모드에 돌입할 수 있습니다.
+    				</p>
+    			</div>
+    		</div>
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 card5" id="sheikbox">
+    			<a href="https://ksh030523.github.io/homepage/ark.html"><span></span></a>
+    			<div id="image" class="sheikpic">
+    				<h2 class="text-center">Ark</h2>
+    			</div>
+    			<div id="description">
+    				<p class="text-center txt">
+              마법과 체술이 융합된 하이레프 제신 격투술을 사용하는 레프 상태와 심연으로부터</br> 강력한 힘을 얻는 스펙터 잠식 상태를</br> 자유롭게 오가며 다양한 스킬을</br> 구사할 수 있습니다.
+    				</p>
+    			</div>
+    	</div>
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    	</div>
+    </div>
+  </div>
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+  </body>
+</html>
